@@ -1,136 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TheraAI - Expert Therapy, Anywhere</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f7f8;
-      color: #222;
-    }
-    header {
-      background: #fff;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #0e7c86;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(135deg, #e0f7fa, #ffffff);
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #0e7c86;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-    }
-    .hero button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background-color: #0e7c86;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 4rem 2rem;
-    }
-    .feature {
-      background: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .feature h3 {
-      color: #0e7c86;
-      margin-bottom: 0.5rem;
-    }
-    .avatar-section {
-      text-align: center;
-      background: #eef4f6;
-      padding: 4rem 2rem;
-    }
-    .avatar-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .avatar-section p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #fff;
-      color: #888;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>TheraAI</h1>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#avatar">The Avatar</a>
-      <a href="#contact">Get Started</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Expert Therapy. Trained AI. Always Available.</h2>
-    <p>Can’t access the therapist you want? TheraAI brings you personalized therapy powered by AI trained by top specialists—like having the best therapist in your pocket, anytime.</p>
-    <button>Try TheraAI Now</button>
-  </section>
-
-  <section id="features" class="features">
-    <div class="feature">
-      <h3>Powered by Experts</h3>
-      <p>Each AI avatar is trained by real licensed therapists with decades of experience in their field.</p>
-    </div>
-    <div class="feature">
-      <h3>On-Demand Support</h3>
-      <p>24/7 access to therapy sessions without the waitlist, no matter your location.</p>
-    </div>
-    <div class="feature">
-      <h3>Personalized Sessions</h3>
-      <p>Your AI therapist evolves with you, providing guidance tailored to your unique journey.</p>
-    </div>
-  </section>
-
-  <section id="avatar" class="avatar-section">
-    <h2>Meet Your AI Therapist</h2>
-    <p>Choose from avatars trained in specific therapy disciplines—couples therapy, anxiety, grief, trauma, and more. Each one modeled after leaders in their respective fields, offering human-like empathy with the speed and scale of AI.</p>
-  </section>
-
-  <footer id="contact">
-    <p>&copy; 2025 TheraAI. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.top-nav .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #007C91;
+}
+.top-nav nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+.cta-button {
+  background: #007C91;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  align-items: center;
+  background: #f1f8fa;
+}
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #007C91;
+}
+.hero-text p {
+  max-width: 500px;
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem;
+}
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007C91;
+}
+.section-subtext {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.step {
+  max-width: 300px;
+  text-align: left;
+}
+.light-bg {
+  background: #f9fafa;
+}
+.specialists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.cta-section {
+  background: #007C91;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  background: #f5f5f5;
+}
